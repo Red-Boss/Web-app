@@ -1,0 +1,27 @@
+﻿@model MebelWeb.Models.Edinica_izmerenia
+
+@{
+    ViewData["Title"] = "Удаление";
+}
+
+<h1>Удаление</h1>
+
+<h3>Вы уверены, что хотите удалить это?</h3>
+<div>
+    <h4>Единица измерения</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Наименование
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Naimenovanie)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Удалить" class="btn btn-danger" /> |
+        <a asp-action="Index">Назад</a>
+    </form>
+</div>

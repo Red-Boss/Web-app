@@ -1,0 +1,48 @@
+﻿@model MebelWeb.Models.Zakupka_syria
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Детали</h1>
+
+<div>
+    <h4>Закупка сырья</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Сырьё
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Syrio.Naimenovanie_materiala)
+        </dd>
+        <dt class = "col-sm-2">
+            Количество
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+        <dt class = "col-sm-2">
+            Сумма
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sum)
+        </dd>
+        <dt class = "col-sm-2">
+            Дата
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.data)
+        </dd>
+        <dt class = "col-sm-2">
+            Сотрудник
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Employee.FIO)
+        </dd>
+    </dl>
+</div>
+<div>
+    @* <a asp-action="Edit" asp-route-id="@Model?.ID">Изменить</a> | *@
+    <a asp-action="Index">Назад</a>
+</div>

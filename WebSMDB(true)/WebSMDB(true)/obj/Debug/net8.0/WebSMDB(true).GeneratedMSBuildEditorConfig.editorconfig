@@ -1,0 +1,271 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebSMDB_true_
+build_property.RootNamespace = WebSMDB_true_
+build_property.ProjectDir = E:\учеба\WebSMDB(true)\WebSMDB(true)\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\учеба\WebSMDB(true)\WebSMDB(true)
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Budjets/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVkamV0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Budjets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVkamV0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Budjets/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVkamV0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Budjets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVkamV0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Doljnosts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9sam5vc3RzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Doljnosts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9sam5vc3RzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Doljnosts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9sam5vc3RzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Doljnosts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9sam5vc3RzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Doljnosts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9sam5vc3RzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Edinica_izmerenia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpbmljYV9pem1lcmVuaWFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Edinica_izmerenia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpbmljYV9pem1lcmVuaWFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Edinica_izmerenia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpbmljYV9pem1lcmVuaWFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Edinica_izmerenia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpbmljYV9pem1lcmVuaWFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Edinica_izmerenia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpbmljYV9pem1lcmVuaWFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Employees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Employees/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Employees/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Employees/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Employees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Ingridients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmlkaWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Ingridients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmlkaWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Ingridients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmlkaWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Ingridients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmlkaWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Ingridients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmlkaWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Prodaja_produkci/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZGFqYV9wcm9kdWtjaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Prodaja_produkci/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZGFqYV9wcm9kdWtjaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Prodaja_produkci/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZGFqYV9wcm9kdWtjaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Prodaja_produkci/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZGFqYV9wcm9kdWtjaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Prodaja_produkci/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZGFqYV9wcm9kdWtjaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Produkcias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrY2lhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Produkcias/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrY2lhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Produkcias/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrY2lhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Produkcias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrY2lhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Produkcias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrY2lhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Proizvodstvo_produkci/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RzdHZvX3Byb2R1a2NpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Proizvodstvo_produkci/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RzdHZvX3Byb2R1a2NpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Proizvodstvo_produkci/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RzdHZvX3Byb2R1a2NpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Proizvodstvo_produkci/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RzdHZvX3Byb2R1a2NpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Proizvodstvo_produkci/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RzdHZvX3Byb2R1a2NpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Syrios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lyaW9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Syrios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lyaW9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Syrios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lyaW9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Syrios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lyaW9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Syrios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lyaW9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Zakupka_syria/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFrdXBrYV9zeXJpYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Zakupka_syria/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFrdXBrYV9zeXJpYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Zakupka_syria/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFrdXBrYV9zeXJpYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Zakupka_syria/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFrdXBrYV9zeXJpYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Zakupka_syria/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFrdXBrYV9zeXJpYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Zarplatas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFycGxhdGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Zarplatas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFycGxhdGFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Zarplatas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFycGxhdGFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Zarplatas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFycGxhdGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Zarplatas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFycGxhdGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/учеба/WebSMDB(true)/WebSMDB(true)/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-btbuszqffg

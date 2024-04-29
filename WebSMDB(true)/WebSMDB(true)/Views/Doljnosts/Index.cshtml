@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MebelWeb.Models.Doljnost>
+
+@{
+    ViewData["Title"] = "Должности";
+}
+
+<h1>Должности</h1>
+
+<p>
+    <a asp-action="Create">Добавить</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Название
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name_doljnost)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Изменить</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Детали</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

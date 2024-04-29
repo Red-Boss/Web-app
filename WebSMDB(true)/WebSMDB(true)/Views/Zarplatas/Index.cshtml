@@ -1,0 +1,145 @@
+﻿@model IEnumerable<MebelWeb.Models.Zarplata>
+@using System.Globalization
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Зарплаты</h1>
+
+<p>
+    <a asp-action="Create" asp-route-year="@ViewBag.year" asp-route-month="@ViewBag.monthI">Добавить</a>
+</p>
+
+<form method="get" action="@Url.Action("Index")" id="filterForm" class="row mb-3">
+    <div class="col-md-4">
+    <div class="form-group">
+        <label name="year" class="control-label">Выберите год</label>
+           @*  <select name="year" asp-items="@ViewBag.year" class="form-control"></select> *@
+            <input name="year" value="@ViewBag.year" class="form-control" />
+    </div>
+    <div class="form-group mb-2">
+        <label name="month" class="control-label">Выберите месяц</label>
+        <select name="month" asp-items="@ViewBag.month" class="form-control"></select>
+    </div>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Сотрудник
+            </th>
+            <th>
+                В закупках
+            </th>
+            <th>
+                В производстве
+            </th>
+            <th>
+                В продажах
+            </th>
+            <th>
+                Всего
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.oklad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bonus)
+            </th>
+            <th>
+                Зарплата
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.given)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee.FIO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ForPurchase)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ForProduction)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ForSale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Common)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.oklad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bonus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.General)
+            </td>
+            <td>
+                @* @Html.DisplayFor(modelItem => item.given) *@
+                    @if (item.given)
+                        @Html.DisplayName("Да")
+
+                    @if (!item.given)
+                        @Html.DisplayName("Нет")
+                </td>
+            <td>
+                    @if (!item.given)
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> @*<span> | </span>
+                        <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a> *@
+                    }
+                    
+                @* <a asp-action="Details" asp-route-id="@item.Id">Детали</a> | *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+@if (ViewBag.sum != 0)
+{
+    <div class="mt-3">
+    <label class="m-3">Общая сумма для выдачи</label>
+    @ViewBag.sum
+</div>}
+<form asp-action="Index" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input name="year" value="@ViewBag.year" type="hidden"/>
+    <input name="month" value="@ViewBag.monthI" type="hidden" />
+    <input name="sum" value="@ViewBag.sum" type="hidden" />
+    @if (ViewBag.sum != 0)
+    {
+        <button type="submit" class="btn btn-primary mb-4">Выдать </button>
+    }
+</form>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Обработчик изменения значения в select
+        $(document).ready(function () {
+            $('select[name="year"]').change(function () {
+                // Автоматическая отправка формы при изменении значения в select
+                $('#filterForm').submit();
+            });
+        });
+    </script>
+    <script>
+        // Обработчик изменения значения в select
+        $(document).ready(function () {
+            $('select[name="month"]').change(function () {
+                // Автоматическая отправка формы при изменении значения в select
+                $('#filterForm').submit();
+            });
+        });
+    </script>
+}

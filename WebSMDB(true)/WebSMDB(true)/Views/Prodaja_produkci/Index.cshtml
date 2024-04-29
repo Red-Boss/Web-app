@@ -1,0 +1,59 @@
+﻿@model IEnumerable<MebelWeb.Models.Prodaja_produkci>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Продажа продукции</h1>
+
+<p>
+    <a asp-action="Create">Добавить</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Продукция
+            </th>
+            <th>
+                Количество
+            </th>
+            <th>
+                Сумма
+            </th>
+            <th>
+                Дата
+            </th>
+            <th>
+               Сотрудник
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Produkcia.Naimenovanie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Count)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee.FIO)
+            </td>
+            <td>
+                @* <a asp-action="Edit" asp-route-id="@item.ID">Изменить</a> | *@
+                <a asp-action="Details" asp-route-id="@item.ID">Детали</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

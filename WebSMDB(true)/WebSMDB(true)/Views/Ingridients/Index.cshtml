@@ -1,0 +1,70 @@
+﻿@model IEnumerable<MebelWeb.Models.Ingridient>
+
+@{
+    ViewData["Title"] = "Ингридиенты";
+}
+
+<h1>Ингридиенты</h1>
+
+<p>
+    <a asp-action="Create" asp-route-produkciaId="@ViewBag.produkciaId">Добавить</a>
+</p>
+
+<form method="get" action="@Url.Action("Index")" id="filterFormIngr">
+    <div class="form-group">
+        <label name="produkciaFilter" class="control-label">Выберите продукцию</label>
+        <select name="produkciaFilter" class="form-control mb-2 w-25" asp-items="ViewBag.produkcia" selected="@ViewBag.produkciaId">
+        </select>
+        @* <button type="submit" class="btn btn-primary mb-4">Показать</button> *@
+    </div>
+
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            @* <th>
+                @Html.DisplayNameFor(model => model.produkcia)
+            </th> *@
+            <th>
+                Сырьё
+            </th>
+            <th>
+                Количество
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.produkcia)
+            </td> *@
+            <td>
+                    @Html.DisplayFor(modelItem => item.Syrio.Naimenovanie_materiala)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Count)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Изменить</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Детали</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Обработчик изменения значения в select
+        $(document).ready(function () {
+            $('select[name="produkciaFilter"]').change(function () {
+                // Автоматическая отправка формы при изменении значения в select
+                $('#filterFormIngr').submit();
+            });
+        });
+    </script>
+}

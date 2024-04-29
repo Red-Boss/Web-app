@@ -1,0 +1,46 @@
+﻿@model MebelWeb.Models.Proizvodstvo_produkci
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Добавление</h1>
+
+<h4>Производство</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="produkcia" class="control-label">Продукция</label>
+                <select asp-for="produkcia" class="form-control" asp-items="ViewBag.produkcia"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Count" class="control-label">Количество</label>
+                <input asp-for="Count" class="form-control" type="number" step="0.01"/>
+                <span asp-validation-for="Count" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="data" class="control-label">Дата</label>
+                <input asp-for="data" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss")" />
+                <span asp-validation-for="data" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="employee" class="control-label">Сорудник</label>
+                <select asp-for="employee" class ="form-control" asp-items="ViewBag.employee"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Добавить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Назад</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

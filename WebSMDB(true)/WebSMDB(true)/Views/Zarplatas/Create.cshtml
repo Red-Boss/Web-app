@@ -1,0 +1,133 @@
+﻿@model MebelWeb.Models.Zarplata
+@using System.Globalization
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Добавление</h1>
+
+<h4>Зарплаты</h4>
+<hr />
+
+<form method="get" action="@Url.Action("Create")" id="filterForm">
+    <div class="form-group">
+        <label name="employeeId" class="control-label">Сотрудник</label>
+        <select name="employeeId" class="form-control mb-2 w-25" asp-items="ViewBag.employee">
+        </select>
+        <input name="year" class="form-control" type="hidden" value="@Model.Year" />
+        <input name="month" class="form-control" type="hidden" value="@Model.Month" />
+
+    </div>
+
+</form>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div class="form-group">
+                <input asp-for="employee" class ="form-control" type="hidden"></input>
+            </div>
+            <div class="form-group">
+                <h5>
+                    <label asp-for="Year" class="control-label col-sm-8">Год</label>
+                    <label class="control-label">@Model.Year</label>
+                </h5>
+                <input asp-for="Year" class="form-control" type="hidden" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-2">
+                <h5>
+                    <label asp-for="Month" class="control-label col-sm-8">Месяц</label>
+                    <label class="control-label">@CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(Model.Month)</label>
+                    <input asp-for="Month" class="form-control" type="hidden" />
+                </h5>
+                <span asp-validation-for="Month" class="text-danger"></span>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+             <div class="form-group">
+                <h5><label asp-for="ForPurchase" class="control-label col-sm-8"></label>
+                    <label class="control-label">@Model.ForPurchase</label>
+                </h5>
+                <input asp-for="ForPurchase" class="form-control" type="hidden" />
+                <span asp-validation-for="ForPurchase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <h5>
+                    <label asp-for="ForProduction" class="control-label col-sm-8"></label>
+                    <label class="control-label">@Model.ForProduction</label>
+                </h5>
+                <input asp-for="ForProduction" class="form-control" type="hidden" />
+                <span asp-validation-for="ForProduction" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <h5>
+                    <label asp-for="ForSale" class="control-label col-sm-8"></label>
+                    <label class="control-label">@Model.ForSale</label>
+                </h5>
+                <input asp-for="ForSale" class="form-control" type="hidden" />
+                <span asp-validation-for="ForSale" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <h5>
+                    <label asp-for="Common" class="control-label col-sm-8"></label>
+                    <label class="control-label">@Model.Common</label>
+                </h5>
+                <input asp-for="Common" class="form-control" type="hidden" />
+                <span asp-validation-for="Common" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <h5>
+                    <label asp-for="oklad" class="control-label col-sm-8"></label>
+                    <label class="control-label">@Model.oklad</label>
+                </h5>
+                <input asp-for="oklad" class="form-control" type="hidden" />
+                <span asp-validation-for="oklad" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <h5>
+                    <label asp-for="Bonus" class="control-label col-sm-8"></label>
+                    <label class="control-label">@Model.Bonus</label>
+                </h5>
+                <input asp-for="Bonus" class="form-control" type="hidden" />
+                <span asp-validation-for="Bonus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <h5>
+                    <label asp-for="General" class="control-label col-sm-8"></label>
+                </h5>
+                <input asp-for="General" class="form-control" type="number" step="0.01"/>
+                <span asp-validation-for="General" class="text-danger"></span>
+            </div>
+           @*  <div class="form-group mb-4">
+                <h5>
+                    <label asp-for="given" class="font-weight-bold  col-sm-8">Выдать </label>
+                    <input asp-for="given" class="form-check-input" type="checkbox" />
+                </h5>
+                <span asp-validation-for="given" class="text-danger"></span>
+            </div>  *@
+            <div class="form-group">
+                <input type="submit" value="Добавить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-route-year="@Model.Year" asp-route-month="@Model.Month">Назад</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Обработчик изменения значения в select
+        $(document).ready(function () {
+            $('select[name="employeeId"]').change(function () {
+                // Автоматическая отправка формы при изменении значения в select
+                $('#filterForm').submit();
+            });
+        });
+    </script>
+}

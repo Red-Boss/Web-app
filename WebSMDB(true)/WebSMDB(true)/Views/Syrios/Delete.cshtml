@@ -1,0 +1,45 @@
+﻿@model MebelWeb.Models.Syrio
+
+@{
+    ViewData["Title"] = "Удаление";
+}
+
+<h1>Удаление</h1>
+
+<h3>Вы уверены, что хотите удалить это?</h3>
+<div>
+    <h4>Сырьё</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Наименование материала
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Naimenovanie_materiala)
+        </dd>
+        <dt class = "col-sm-2">
+            Единица измерения
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Edinica_izmerenia.Naimenovanie)
+        </dd>
+        <dt class = "col-sm-2">
+            Количество
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+        <dt class = "col-sm-2">
+            Сумма
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sum)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Удалить" class="btn btn-danger" /> |
+        <a asp-action="Index">Назад</a>
+    </form>
+</div>

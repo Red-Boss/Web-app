@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MebelWeb.Models.Budjet>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Бюджет</h1>
+
+<p>
+    <a asp-action="Create">Добавить</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Сумма
+            </th>
+            <th>
+                Бонус
+            </th>
+            <th>
+                Наценка
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.budjet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bonus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pr_prodaji)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Изменить</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Детали</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

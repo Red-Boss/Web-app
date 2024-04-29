@@ -1,0 +1,36 @@
+﻿@model MebelWeb.Models.Budjet
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Детали</h1>
+
+<div>
+    <h4>Бюджет</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Бюджет
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.budjet)
+        </dd>
+        <dt class = "col-sm-2">
+            Бонус
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.bonus)
+        </dd>
+        <dt class = "col-sm-2">
+            Наценка
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.pr_prodaji)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.ID">Изменить</a> |
+    <a asp-action="Index">Назад</a>
+</div>
